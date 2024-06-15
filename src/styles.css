@@ -1,0 +1,35 @@
+/* src/styles.css */
+.app-layout {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 240px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.selected {
+  background-color: rgba(0, 0, 0, 0.08); /* Highlight color */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link.active {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.nav-link.active .MuiListItemText-primary {
+  color: #1976d2;
+}
